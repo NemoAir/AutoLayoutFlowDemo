@@ -167,7 +167,7 @@ AutoSizeViewController 类主要是演示一个superView正确设置好约束后
 通过这几个方法就可以实现根据内容自动改变大小的view。在cell size的计算中应该会有非常大的帮助，不用再去手动计算。
 
 #XXNibBridge
-XXNibBridge 类是sunnyxxx 写的一个如何非常简单的实现Xib的动态桥接的分类。他的blog里有详细的说明，使用了一些RunTime的特性来实现。
+XXNibBridge 类是sunnyxxx 写的一个如何非常简单的实现Xib动态桥接的分类。他的blog里有详细的说明，使用了一些RunTime的特性来实现。
 BridgeView 类展示了使用方法，非常简单。在Xib与代码结合使用的时候会非常高效。
 
 [XXNibBridge blog地址](http://blog.sunnyxx.com/2014/07/01/ios_ib_bridge/)<br/>
