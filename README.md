@@ -15,7 +15,7 @@ viewcontroller中和 “约束-布局-渲染” 过程有关的主要方法和�
 2. -loadView
 3. -viewDidLoad
   这里需要注意，在 iOS8 中，Xib文件中的view在这个阶段并不会加载到self.view的层次结构中。所以这
-  个时候如果进行布局或者约束的生成和改变时无效的，而 iOS7  这个时候已经将 xib 里的 view 加到 self.view 的层次结构中
+  个时候如果进行布局或者约束的生成和改变是无效的，而 iOS7  这个时候已经将 Xib 里的 view 加到 self.view 的层次结构中
 4. -viewWillAppear
 5. -viewWillLayoutSubviews 
 	这个方法会使self.view 调用layoutSubviews
