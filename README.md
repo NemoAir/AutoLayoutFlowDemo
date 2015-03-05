@@ -1,8 +1,8 @@
 # AutoLayoutFlowDemo
 AutoLayoutFlowDemo 
 这个Demo主要用来展示约束到布局生效的过程。
-并不针对约束的使用说明，是演示从约束到布局生效过程和如何通过约束来改变view的大小和产生动画改变。
-同时也展示了 ScrollView 的正确约束使用方式，和通过正确的约束使SuperView根据subviews的大小自动改变自己的frame。
+并不针对约束的使用说明，是演示从约束到布局生效过程，通过约束来改变view的大小并产生动画改变。
+同时也展示了 ScrollView 的正确约束使用方式，通过正确的约束使superView根据subviews的大小自动改变自己的frame。
 
 #AutoLayoutController 类的内容
 AutoLayoutController类主要展示了约束到布局的过程，顺便对ScrollView使用了自动布局和动画改变bounds。
