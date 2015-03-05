@@ -74,21 +74,21 @@ viewcontroller中和 “约束-布局-渲染” 过程有关的主要方法和�
  1）调用后告诉系统该view上的约束有更新，系统相当于有一个需要更新该view的标记flag，在下次
   进行计算或更新约束的时候.比如调用了2）就会调用viewcontrollerde  
   ```
-  -updateViewConstraints。
+  -updateViewConstraints
   ```
  但是这里有个坑需要注意。如果单独调用2）不一定会触发updateViewConstraints。
  因为 1）和 2）的实现类似下面布局更新方法的实现原理：
 ```Objective-C 
 -(void)layoutIfNeeded {
- if (self._needsLayout) {
-     UIView *sv = self.superview;
-    if (sv._needsLayout) {
-        [sv layoutIfNeeded];
-    } else {
-        [self layoutSubviews];
-    }
+  if (self._needsLayout) {
+      UIView *sv = self.superview;
+      if (sv._needsLayout) {
+         [sv layoutIfNeeded];
+      } else {
+         [self layoutSubviews];
+      }
   }
- }
+}
 ``` 
 
 
@@ -113,7 +113,7 @@ viewcontroller中和 “约束-布局-渲染” 过程有关的主要方法和�
 
 这两个方法是对布局进行改变的方法。他们合作的原理和1）、2）一样。3）负责标记需要布局改变，4）来触发
  ```Objective-C 
-layoutSubviews
+-layoutSubviews
 ```
 但是调用 4) 的时候会判断是 否需要更新布局的 flag ，就是如果没有调用3）有可能4）并不会触发layoutSubviews。所以在实践中3）、4）也最好一
 起使用，才能保证布局更新。这两个方法加入动画块就可以实现动画布局的效果。
@@ -126,8 +126,8 @@ layoutSubviews
 ```
 就可以动画改变布局。
 
-      在viewcontroller中调用 3）和4）会重新触发viewWillLayoutSubviews，viewDidLayoutSubviews的过程，所以最好不要在这两个方法
-      中加入布局的代码，应该完全依靠约束来保证布局，因为这两个方法在每次布局过程中都会被调用。
+     在viewcontroller中调用 3）和4）会重新触发viewWillLayoutSubviews，viewDidLayoutSubviews的过程，所以最好不要在这两个方法
+     中加入布局的代码，应该完全依靠约束来保证布局，因为这两个方法在每次布局过程中都会被调用。
 
  同时布局frame的计算过程是从 superview 到 subview 的。而 -layoutSubviews 方法被触发后，会对该 view 的 subviews 进行
  ```Objective-C 
