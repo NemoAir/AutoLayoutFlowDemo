@@ -195,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3n-3B-vtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502.5" y="-877"/>
+            <point key="canvasLocation" x="291" y="-897"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YYJ-7O-icg">
@@ -210,11 +210,12 @@
                     <connections>
                         <segue destination="zqk-Oh-GBt" kind="relationship" relationship="viewControllers" id="ly8-Wi-5Pr"/>
                         <segue destination="Ccc-fS-DUd" kind="relationship" relationship="viewControllers" id="0dK-lX-FzA"/>
+                        <segue destination="vkR-D4-3Oe" kind="relationship" relationship="viewControllers" id="PtW-iA-N4J"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghH-Bc-Cwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-207" y="-767"/>
+            <point key="canvasLocation" x="-543" y="-869"/>
         </scene>
         <!--约束与布局加载流程-->
         <scene sceneID="3Q7-r8-Avh">
@@ -514,7 +515,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZu-Ed-eRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-189" y="-807"/>
+            <point key="canvasLocation" x="-339" y="-906"/>
+        </scene>
+        <!--动态改变高度cell-->
+        <scene sceneID="4DE-r2-UkJ">
+            <objects>
+                <viewController id="vkR-D4-3Oe" customClass="AutoResizeCellHeightController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gRn-z6-2Oj"/>
+                        <viewControllerLayoutGuide type="bottom" id="9nL-2h-N0I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oo2-2k-Mup">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="动态改变高度cell" id="dyB-mV-ibC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSQ-1V-FKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-193.5" y="-619"/>
         </scene>
     </scenes>
 </document>

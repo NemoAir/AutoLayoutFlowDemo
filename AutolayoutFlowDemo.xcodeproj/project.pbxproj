@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2C9EB41AB17BE8004488F7 /* AutoResizeCellHeightController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2C9EB31AB17BE8004488F7 /* AutoResizeCellHeightController.m */; };
+		FE2C9EB91AB17CB5004488F7 /* AutoResizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2C9EB71AB17CB5004488F7 /* AutoResizeCell.m */; };
+		FE2C9EBA1AB17CB5004488F7 /* AutoResizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE2C9EB81AB17CB5004488F7 /* AutoResizeCell.xib */; };
+		FE2C9EC81AB1905B004488F7 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2C9EC01AB1905B004488F7 /* ALView+PureLayout.m */; };
+		FE2C9EC91AB1905B004488F7 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2C9EC21AB1905B004488F7 /* NSArray+PureLayout.m */; };
+		FE2C9ECA1AB1905B004488F7 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2C9EC41AB1905B004488F7 /* NSLayoutConstraint+PureLayout.m */; };
 		FE799AB51AA833850058391D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE799AB41AA833850058391D /* main.m */; };
 		FE799AB81AA833850058391D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE799AB71AA833850058391D /* AppDelegate.m */; };
 		FE799ABE1AA833850058391D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE799ABC1AA833850058391D /* Main.storyboard */; };
@@ -32,6 +38,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE2C9EB21AB17BE8004488F7 /* AutoResizeCellHeightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoResizeCellHeightController.h; sourceTree = "<group>"; };
+		FE2C9EB31AB17BE8004488F7 /* AutoResizeCellHeightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoResizeCellHeightController.m; sourceTree = "<group>"; };
+		FE2C9EB61AB17CB5004488F7 /* AutoResizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoResizeCell.h; path = cell/AutoResizeCell.h; sourceTree = "<group>"; };
+		FE2C9EB71AB17CB5004488F7 /* AutoResizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoResizeCell.m; path = cell/AutoResizeCell.m; sourceTree = "<group>"; };
+		FE2C9EB81AB17CB5004488F7 /* AutoResizeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AutoResizeCell.xib; path = cell/AutoResizeCell.xib; sourceTree = "<group>"; };
+		FE2C9EBF1AB1905B004488F7 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		FE2C9EC01AB1905B004488F7 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		FE2C9EC11AB1905B004488F7 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		FE2C9EC21AB1905B004488F7 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		FE2C9EC31AB1905B004488F7 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		FE2C9EC41AB1905B004488F7 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		FE2C9EC51AB1905B004488F7 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		FE2C9EC61AB1905B004488F7 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		FE2C9EC71AB1905B004488F7 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
 		FE799AAF1AA833850058391D /* AutolayoutFlowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutolayoutFlowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE799AB31AA833850058391D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE799AB41AA833850058391D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +94,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE2C9EB51AB17C94004488F7 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				FE2C9EB61AB17CB5004488F7 /* AutoResizeCell.h */,
+				FE2C9EB71AB17CB5004488F7 /* AutoResizeCell.m */,
+				FE2C9EB81AB17CB5004488F7 /* AutoResizeCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		FE2C9EBE1AB1905B004488F7 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				FE2C9EBF1AB1905B004488F7 /* ALView+PureLayout.h */,
+				FE2C9EC01AB1905B004488F7 /* ALView+PureLayout.m */,
+				FE2C9EC11AB1905B004488F7 /* NSArray+PureLayout.h */,
+				FE2C9EC21AB1905B004488F7 /* NSArray+PureLayout.m */,
+				FE2C9EC31AB1905B004488F7 /* NSLayoutConstraint+PureLayout.h */,
+				FE2C9EC41AB1905B004488F7 /* NSLayoutConstraint+PureLayout.m */,
+				FE2C9EC51AB1905B004488F7 /* PureLayout+Internal.h */,
+				FE2C9EC61AB1905B004488F7 /* PureLayout.h */,
+				FE2C9EC71AB1905B004488F7 /* PureLayoutDefines.h */,
+			);
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
 		FE799AA61AA833840058391D = {
 			isa = PBXGroup;
 			children = (
@@ -95,18 +141,22 @@
 		FE799AB11AA833850058391D /* AutolayoutFlowDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FE2C9EBE1AB1905B004488F7 /* PureLayout */,
+				FE2C9EB51AB17C94004488F7 /* cell */,
+				FE799AB61AA833850058391D /* AppDelegate.h */,
+				FE799AB71AA833850058391D /* AppDelegate.m */,
 				FE799AE11AA8353D0058391D /* XXNibBridge */,
 				FE799AD81AA8353D0058391D /* AutoLayoutController.h */,
 				FE799AD91AA8353D0058391D /* AutoLayoutController.m */,
 				FE799ADA1AA8353D0058391D /* AutoSizeViewController.h */,
 				FE799ADB1AA8353D0058391D /* AutoSizeViewController.m */,
+				FE2C9EB21AB17BE8004488F7 /* AutoResizeCellHeightController.h */,
+				FE2C9EB31AB17BE8004488F7 /* AutoResizeCellHeightController.m */,
 				FE799ADC1AA8353D0058391D /* BridgeView.h */,
 				FE799ADD1AA8353D0058391D /* BridgeView.m */,
 				FE799ADE1AA8353D0058391D /* BridgeView.xib */,
 				FE799ADF1AA8353D0058391D /* TestView.h */,
 				FE799AE01AA8353D0058391D /* TestView.m */,
-				FE799AB61AA833850058391D /* AppDelegate.h */,
-				FE799AB71AA833850058391D /* AppDelegate.m */,
 				FE799ABC1AA833850058391D /* Main.storyboard */,
 				FE799ABF1AA833850058391D /* Images.xcassets */,
 				FE799AC11AA833850058391D /* LaunchScreen.xib */,
@@ -233,6 +283,7 @@
 				FE799ABE1AA833850058391D /* Main.storyboard in Resources */,
 				FE799AC31AA833850058391D /* LaunchScreen.xib in Resources */,
 				FE799AC01AA833850058391D /* Images.xcassets in Resources */,
+				FE2C9EBA1AB17CB5004488F7 /* AutoResizeCell.xib in Resources */,
 				FE799AE71AA8353D0058391D /* BridgeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,10 +305,15 @@
 				FE799AB81AA833850058391D /* AppDelegate.m in Sources */,
 				FE799AE61AA8353D0058391D /* BridgeView.m in Sources */,
 				FE799AE91AA8353D0058391D /* XXNibBridge.m in Sources */,
+				FE2C9EC81AB1905B004488F7 /* ALView+PureLayout.m in Sources */,
 				FE799AB51AA833850058391D /* main.m in Sources */,
 				FE799AE51AA8353D0058391D /* AutoSizeViewController.m in Sources */,
+				FE2C9EC91AB1905B004488F7 /* NSArray+PureLayout.m in Sources */,
 				FE799AE81AA8353D0058391D /* TestView.m in Sources */,
+				FE2C9EB91AB17CB5004488F7 /* AutoResizeCell.m in Sources */,
 				FE799AE41AA8353D0058391D /* AutoLayoutController.m in Sources */,
+				FE2C9EB41AB17BE8004488F7 /* AutoResizeCellHeightController.m in Sources */,
+				FE2C9ECA1AB1905B004488F7 /* NSLayoutConstraint+PureLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
