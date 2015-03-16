@@ -12,6 +12,21 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    [super awakeFromNib];
+    for(NSLayoutConstraint *cellConstraint in self.constraints){
+        [self removeConstraint:cellConstraint];
+        id firstItem = cellConstraint.firstItem == self ? self.contentView : cellConstraint.firstItem;
+        id seccondItem = cellConstraint.secondItem == self ? self.contentView : cellConstraint.secondItem;
+        NSLayoutConstraint* contentViewConstraint =
+        [NSLayoutConstraint constraintWithItem:firstItem
+                                     attribute:cellConstraint.firstAttribute
+                                     relatedBy:cellConstraint.relation
+                                        toItem:seccondItem
+                                     attribute:cellConstraint.secondAttribute
+                                    multiplier:cellConstraint.multiplier
+                                      constant:cellConstraint.constant];
+        [self.contentView addConstraint:contentViewConstraint];
+    }
 }
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -33,8 +48,8 @@
 }
 -(void)updateConstraints {
     
-    [self.contentLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(20, 20, 20, 20)];
-    [self.contentLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
+//    [self.contentLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(20, 20, 20, 20)];
+//    [self.contentLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
   
     [super updateConstraints];
 }
