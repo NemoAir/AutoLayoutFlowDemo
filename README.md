@@ -166,6 +166,8 @@ AutoSizeViewController 类主要是演示一个superView正确设置好约束后
 同时UIView中还有一个- intrinsicContentSize 方法，也是自动布局用来计算view的size。默认的实现是返回（-1，-1），自定义的view可以重载这个方法返回正确的size，重载该方法的view才不会返回（-1，-1）。如果实现了约束，并没有重载该方法还是会默认返回（-1，-1）。但-systemLayoutSizeFittingSize方法会正确的size。
 通过这几个方法就可以实现根据内容自动改变大小的view。在cell size的计算中应该会有非常大的帮助，不用再去手动计算。
 
+#AutoResizeCellHeightController
+该类演示了如何通过约束动态计算cell的高度。但是只能通过代码添加约束和初始化cell。通过IB添加的约束无法正确的计算出cell的高度，具体原因还未发现，应该和约束到布局的顺序有关系。
 #XXNibBridge
 XXNibBridge 类是sunnyxxx 写的一个如何非常简单的实现Xib动态桥接的分类。他的blog里有详细的说明，使用了一些RunTime的特性来实现。
 BridgeView 类展示了使用方法，非常简单。在Xib与代码结合使用的时候会非常高效。
